@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003d00">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User 1"
+        android:textColor="#FFFF00"
+        android:textSize="16sp"
+        android:id="@+id/user"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"/>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:background="#FFFF00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/comments"
+        android:layout_margin="12dp"
+        android:alpha="0.4">
+        <RadioButton android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="24dp"/>
+        <RadioButton android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_marginLeft="24dp"/>
+        <RadioButton android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_marginLeft="24dp"/>
+        <RadioButton android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="24dp"/>
+        <RadioButton android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="24dp"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Comments"
+        android:layout_height="128dp"
+        android:background="@android:drawable/dialog_frame"
+        android:textColor="#FFFF00"
+        android:id="@+id/comments"
+        android:inputType="textMultiLine"
+        android:layout_centerVertical="true"/>
+
+    <requestFocus/>
+    <TextView
+        android:scrollbars = "vertical"
+        android:id="@+id/nfc_contents2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:text=" Log Goes Here"
+        android:textStyle="bold"
+        android:textColor="#FFFF00"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:alpha="0.5"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nfc_contents2"
+        android:layout_toStartOf="@+id/button1"
+        android:background="#629749"
+        android:text="Comment"
+        android:layout_toLeftOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nfc_contents2"
+        android:layout_toEndOf="@+id/button1"
+        android:background="#629749"
+        android:text="Send Log"
+        android:layout_toRightOf="@+id/button1" />
+
+</RelativeLayout>

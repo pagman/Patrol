@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003d00"
+    >
+    <!--ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/hellenicarmysealsmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+       /-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Tutorial"
+        android:background="#629749"/>
+    <ImageView
+        android:id="@+id/nfcimg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/nfc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/shared"
+        android:layout_below="@+id/nfcimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan NFC to LogIn"
+        android:textColor="#FFFF00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Crypto Key"
+        android:textColorHint="#FFFF00"
+        android:background="@android:drawable/dialog_frame"
+        android:textColor="#FFFF00"
+        android:layout_below="@+id/newusername"
+        android:id="@+id/cryptokey"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_above="@+id/cryptokey"
+        android:background="#629749"/>
+
+
+
+
+
+
+
+</RelativeLayout>
